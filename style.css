@@ -2,7 +2,7 @@
     color: black;
     background-color:black;
     }
- 
+
  .btn-space {
     margin-right: 10px;
     font-family: Sansation;
@@ -34,4 +34,28 @@ a{
   padding-left:30px;
   padding-right:30px;
   font-family: Sansation;
+}
+
+footer {
+    background-color: black;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    font-size: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+	position: absolute;
+	bottom: 0;
+}
+
+.footer-links{
+	display: flex;
+	padding: 10px 10px;
+}
+
+.footer-links > a > img {
+	padding: 5px 5px;
 }
