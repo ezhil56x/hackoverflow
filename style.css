@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Silkscreen&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
 .navbar-custom {
     color: black;
     background-color:black;
@@ -59,3 +62,36 @@ footer {
 .footer-links > a > img {
 	padding: 5px 5px;
 }
+
+/* Aditya CSS */
+
+.what-is {
+  padding-top: 1em;
+  padding-bottom: 1em;
+  font-size: calc(3em + 1vmin);
+  font-family: "Silkscreen", cursive;
+  font-weight: bolder;
+  text-align: center;
+  color: #ffec9d;
+  text-shadow: rgba(1, 51, 252, 0.9) 0px 0px 39px;
+}
+.box {
+  border: 1px solid rgb(250, 249, 249);
+  background-color: aqua;
+  /* opacity: 0.6; */
+  -webkit-box-shadow: 0px 0px 105px 45px rgba(12, 189, 47, 0.9);
+  -moz-box-shadow: 0px 0px 105px 45px rgba(12, 189, 47, 0.9);
+  box-shadow: 0px 0px 105px 45px rgba(12, 189, 47, 0.9);
+}
+.text-content {
+  font-size: 35%;
+  margin: 0.8em;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  color: #ffec9d;
+  opacity: 1;
+  line-height: 1.5;
+  text-shadow: rgba(1, 51, 252, 0.9) 0px 0px 39px;
+}
+
+/* End of aditya CSS */
