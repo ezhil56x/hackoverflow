@@ -1,78 +1,137 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
-  <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Vertical Timeline</title>
 </head>
-
 <body>
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
- 
-  <nav class="navbar navbar-expand-lg navbar-dark " style="background-color: black;">
-    <a href="https://cyscomvit.com">
-      <img src="https://cyscomvit.com/assets/images/logo.png" id="logo" >
-      <a class="navbar-brand" href="https://cyscomvit.com">CYSCOM</a>
-    </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mx-auto">
-        <li class="nav-item active">
-          <a class="nav-link text-light" href="#">Timeline <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-light" href="#">Sponsors</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-light" href="#">Judges</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-light" href="#">Contact</a>
-        </li>
-
-        </li>
-      </ul>
-      <button type="button" class="btn btn-default btn-space navbar-btn navbar-right">Register</button>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+   
+    <nav class="navbar navbar-expand-lg navbar-dark " style="background-color: black;">
+      <a href="https://cyscomvit.com">
+        <img src="https://cyscomvit.com/assets/images/logo.png" id="logo" >
+        <a class="navbar-brand" href="https://cyscomvit.com">CYSCOM</a>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+  
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item active">
+            <a class="nav-link text-light" href="#">Timeline <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="#">Sponsors</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="#">Judges</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="#">Contact</a>
+          </li>
+  
+          </li>
+        </ul>
+        <button type="button" class="btn btn-default btn-space navbar-btn navbar-right">Register</button>
+      </div>
+    </nav>
+    <div class="what-is">WHAT IS HACKOVERFLOW?</title>
+      <br /><br/>
+  <!-- About content-aditya -->
+  <div class="text-content">
+  <div class="box">
+  <p class="box-text">
+  HackoverFlow is the flagship hackathon conducted by Cyscom VIT Chennai
+  formerly OWASP VIT Chennai. HackoverFlow encourages participants to present their solutions to tackle 
+  challenging real-world problems. It is a platform to compete and network
+  with like-minded and skilled students from all walks of life.
+  <br /><br />
+  HackoverFlow is an 48hr hackathon event, themed on latest technological
+  requirements of NGOs, and startups, focusing on the domains of blockchain,
+  AI & ML, IOT etc. So gather your teams and get ready for the ultimate
+  technical-skills showdown from 23rd September (Friday) to 25th
+  September(Sunday).
+  </p>
+  </div>
+  </div>
+    <div class="container" data-aos="fade-up">
+        <div class="timeline" data-aos="fade-up">
+            <ul>
+                <li>
+                    <!-- while using aos, date comes inside the box... need to change it -->
+                    <div class="timeline-content" data-aos="fade-bottom">
+                        <!-- trying dates, similarly for all -->
+                        <h2 class="date" data-aos="fade-up" >20th may 2022</h2>
+                        <h1>Heading 1</h1>
+                        <p>
+                           Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde blanditiis voluptas commodi. Corporis, dolor doloribus..
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <div class="timeline-content" data-aos="fade-right">
+                        <h2 class="date" data-aos="fade-up">20th may 2022</h2>
+                        <h1>Heading 2</h1>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde blanditiis voluptas commodi. Corporis, dolor doloribus...
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <div class="timeline-content">
+                        <h2 class="date" data-aos="fade-up">20th may 2022</h2>
+                        <h1>Heading 3</h1>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde blanditiis voluptas commodi. Corporis, dolor doloribus..
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <div class="timeline-content" data-aos="fade-right">
+                        <h2 class="date" data-aos="fade-up">20th may 2022</h2>
+                        <h1>Heading 4</h1>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde blanditiis voluptas commodi. Corporis, dolor doloribus..
+                        </p>
+                    </div>
+                </li>
+            </ul>
+        </div>
     </div>
-  </nav>
-  <div class="what-is">WHAT IS HACKOVERFLOW?</title>
-    <br /><br/>
-<!-- About content-aditya -->
-<div class="text-content">
-<div class="box">
-<p class="box-text">
-HackoverFlow is the flagship hackathon conducted by Cyscom VIT Chennai
-formerly OWASP VIT Chennai. HackoverFlow encourages participants to present their solutions to tackle 
-challenging real-world problems. It is a platform to compete and network
-with like-minded and skilled students from all walks of life.
-<br /><br />
-HackoverFlow is an 48hr hackathon event, themed on latest technological
-requirements of NGOs, and startups, focusing on the domains of blockchain,
-AI & ML, IOT etc. So gather your teams and get ready for the ultimate
-technical-skills showdown from 23rd September (Friday) to 25th
-September(Sunday).
-</p>
-</div>
-</div>
-<!-- End of about -->
-  <footer>
-    <p>CYSCOM VITCC | Think before you click.</p>
-    <div class="footer-links">
-      <a href="https://facebook.com/cyscomvit/"><img src="./icons/facebook.png" alt="" height="32" width="32"></a>
-      <a href="https://instagram.com/cyscomvit/"><img src="./icons/instagram.png" alt="" height="32" width="32"></i></a>
-      <a href="https://twitter.com/CyscomVit/"><img src="./icons/twitter.png" alt="" height="32" width="32"></a>
-      <a href="https://www.linkedin.com/company/cyscomvit/"><img src="./icons/linkedin.png" alt="" height="32" width="32"></a>
-      <a href="https://github.com/cyscomvit/"><img src="./icons/github.png" alt="" height="32" width="32"></a>
-      <a href="https://discord.gg/9RyHCQgjAv"><img src="./icons/discord.png" alt="" height="32" width="32"></a>
-      <a href="https://blog.cyscomvit.com/"><img src="./icons/blogger.png" alt="" height="32" width="32"></a>
-      <a href="https://medium.cyscomvit.com/"><img src="./icons/medium.png" alt="" height="32" width="32"></a>
-    </div>
-  </footer>
+    
+    <footer>
+        <p>CYSCOM VITCC | Think before you click.</p>
+        <div class="footer-links">
+          <a href="https://facebook.com/cyscomvit/"><img src="./icons/facebook.png" alt="" height="32" width="32"></a>
+          <a href="https://instagram.com/cyscomvit/"><img src="./icons/instagram.png" alt="" height="32" width="32"></i></a>
+          <a href="https://twitter.com/CyscomVit/"><img src="./icons/twitter.png" alt="" height="32" width="32"></a>
+          <a href="https://www.linkedin.com/company/cyscomvit/"><img src="./icons/linkedin.png" alt="" height="32" width="32"></a>
+          <a href="https://github.com/cyscomvit/"><img src="./icons/github.png" alt="" height="32" width="32"></a>
+          <a href="https://discord.gg/9RyHCQgjAv"><img src="./icons/discord.png" alt="" height="32" width="32"></a>
+          <a href="https://blog.cyscomvit.com/"><img src="./icons/blogger.png" alt="" height="32" width="32"></a>
+          <a href="https://medium.cyscomvit.com/"><img src="./icons/medium.png" alt="" height="32" width="32"></a>
+        </div>
+      </footer>
+    
+    
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        // at what scrolling point the animation will occur
+        offset:300,
+        // changing the duration of the animation(in milli-seconds)..
+        duration: 1000,
+
+
+      });
+    </script>
+    
 </body>
 </html>
