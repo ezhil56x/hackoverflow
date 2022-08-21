@@ -1,260 +1,323 @@
-@import url("https://fonts.googleapis.com/css2?family=Silkscreen&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;1,500&family=Roboto:wght@100&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(132deg, rgb(253, 112, 136) 0.00%, rgb(255, 211, 165) 100.00%);
+}
+/* Navbar style starts */
 
 .navbar-custom {
-    color: black;
-    background-color:black;
-    }
-
- .btn-space {
-    margin-right: 10px;
-    font-family: Sansation;
-}
-.navbar-brand{
-	position: absolute;
-	top: 20px;
-	left: 80px;
-	color: #ffffff;
-	font-size: 1.2rem;
-	font-family: Sansation;
-}
-.nav-item{
-	color: blue;
-}
-a:hover {
+  color: black;
   background-color: black;
 }
-a{
-	font-size: 18px;
-}
-.nav-link{
-	color: #FFFFFF;
-}
-#logo{
-	height: 60px;
-}
-.navbar-nav > li{
-  padding-left:30px;
-  padding-right:30px;
+
+.btn-space {
+  margin-right: 10px;
   font-family: Sansation;
 }
 
-footer {
-    background-color: black;
-    color: #fff;
-    padding: 10px 0;
-    text-align: center;
-    font-size: 1.2rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-	position: absolute;
-	bottom: 0;
+.navbar-brand {
+  position: absolute;
+  top: 20px;
+  left: 80px;
+  color: #ffffff;
+  font-size: 1.2rem;
+  font-family: Sansation;
 }
 
-.footer-links{
-	display: flex;
-	padding: 10px 10px;
+.nav-item {
+  color: blue;
+}
+
+a:hover {
+  background-color: black;
+}
+
+a {
+  font-size: 18px;
+}
+
+.nav-link {
+  color: #ffffff;
+}
+
+#logo {
+  height: 60px;
+}
+
+.navbar-nav > li {
+  padding-left: 30px;
+  padding-right: 30px;
+  font-family: Sansation;
+}
+
+/* Navbar style ends */
+
+/* Countdown timer style starts */
+
+.countdown-container {
+  padding: 10px 0px 20px 0px;
+  /* min-height: 50vh; */
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.countdown-main {
+  display: flex;
+  padding: 2rem;
+  align-items: center;
+  flex-direction: column;
+}
+
+.countdown {
+  display: flex;
+  text-align: center;
+  column-gap: 8rem;
+}
+
+.logo {
+  display: flex;
+  padding: 2rem;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+  letter-spacing: 0.5rem;
+}
+
+.main-logo {
+  width: 25vh;
+}
+
+.event-name {
+  padding-top: 0.4rem;
+  margin-bottom: auto;
+}
+
+.chapter-name {
+  padding-top: 0.25rem;
+  margin-bottom: auto;
+}
+
+.eventStarts {
+  font-size: 1.5rem;
+  margin-bottom: auto;
+  padding-bottom: 0.8rem;
+}
+
+/* Countdown timer style ends */
+
+/* About content style starts */
+
+.about h1{
+  text-align: center;
+  padding: 0.5rem;
+}
+
+.info {
+  width: 80%;
+  justify-content: center;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.info p {
+  text-align: center;
+}
+
+/* About content style ends */
+
+/* Sponsors Styles */
+
+.card-body {
+  height: 0px;
+  background-color: aqua;
+  transition: 1s;
+}
+
+.card-body:hover {
+  transition: 1s;
+  transform: translateY(-100px);
+  height: fit-content;
+}
+
+.card-text {
+  opacity: 0;
+}
+
+.card-text:hover {
+  opacity: 1;
+  transition: 1s;
+}
+
+@keyframes textanima {
+  from {
+    opacity: 0;
+  }
+  to {
+    transform: translateY(-100px);
+    opacity: 0.5;
+  }
+}
+
+/* Sponsor style ends */
+
+/* Timline style starts */
+
+.test {
+  font-size: 1cm;
+}
+
+.tl-container {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  padding: 100px 100px;
+}
+
+.timeline {
+  width: 80%;
+  height: auto;
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.timeline ul {
+  list-style: none;
+}
+
+.timeline ul li {
+  padding: 1px;
+  color: white;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.timeline ul li:last-child {
+  margin-bottom: 0;
+}
+
+.timeline-content {
+  padding: 2%;
+  border-radius: 5%;
+  background-color: rgb(110, 40, 99);
+}
+
+.timeline-content h1 {
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 30px;
+  margin-bottom: 10px;
+}
+
+.timeline-content p {
+  font-size: 14px;
+  line-height: 30px;
+}
+
+.timeline-content .date {
+  font-size: 15px;
+  font-weight: 350;
+  letter-spacing: 2px;
+}
+
+.timeline ul li {
+  width: 50%;
+  margin-bottom: 50px;
+  position: relative;
+}
+
+.timeline ul li:nth-child(odd) {
+  float: left;
+  clear: right;
+  transform: translateX(-30px);
+}
+
+.timeline ul li:nth-child(even) {
+  float: right;
+  clear: left;
+  transform: translateX(+30px);
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  height: 79%;
+  width: 10px;
+  border-radius: 100%;
+  background-color: rgb(91, 83, 172);
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.timeline ul li::after {
+  content: "";
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  background-color: rgb(158, 37, 37);
+  border-radius: 50%;
+  top: 0;
+}
+
+.timeline ul li:nth-child(odd)::after {
+  right: 0;
+  transform: translate(50%, -50%);
+  right: -30px;
+}
+
+.timeline ul li:nth-child(even)::after {
+  right: 0;
+  transform: translate(-50%, -50%);
+  left: -30px;
+}
+
+.timeline ul li:hover::after {
+  background-color: rgb(39, 67, 67);
+}
+
+.timeline-content:hover {
+  background-color: aqua;
+}
+
+.timeline-content .date {
+  position: absolute;
+  top: -30px;
+}
+
+/* Timeline style ends */
+
+/* Footer style starts */
+
+footer {
+  background-color: black;
+  color: #fff;
+  padding: 10px 0;
+  text-align: center;
+  font-size: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  bottom: 0;
+}
+
+.footer-links {
+  display: flex;
+  padding: 10px 10px;
 }
 
 .footer-links > a > img {
-	padding: 5px 5px;
+  padding: 5px 5px;
 }
 
-/* Aditya CSS */
-
-.what-is {
-  padding-top: 1em;
-  padding-bottom: 1em;
-  font-size: calc(3em + 1vmin);
-  font-family: "Silkscreen", cursive;
-  font-weight: bolder;
-  text-align: center;
-  color: #ffec9d;
-  text-shadow: rgba(1, 51, 252, 0.9) 0px 0px 39px;
-}
-.box {
-  border: 1px solid rgb(250, 249, 249);
-  background-color: aqua;
-  /* opacity: 0.6; */
-  -webkit-box-shadow: 0px 0px 105px 45px rgba(12, 189, 47, 0.9);
-  -moz-box-shadow: 0px 0px 105px 45px rgba(12, 189, 47, 0.9);
-  box-shadow: 0px 0px 105px 45px rgba(12, 189, 47, 0.9);
-}
-.text-content {
-  font-size: 35%;
-  margin: 0.8em;
-  font-family: "Montserrat", sans-serif;
-  text-align: center;
-  color: #ffec9d;
-  opacity: 1;
-  line-height: 1.5;
-  text-shadow: rgba(1, 51, 252, 0.9) 0px 0px 39px;
-}
-
-/* End of aditya CSS */
-
-
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;1,500&family=Roboto:wght@100&display=swap');
-/* removing default html styling */
-*{
-    margin:0;
-    padding:0;
-    box-sizing: border-box;
-}
-.test{
-    font-size: 1cm;
-}
-html{
-    font-family: "Montserrat", sans-serif;
-    color:white;
-
-}
-/* applying bg and stuff for the container alone.. */
-.container{
-    min-height: 100vh;
-    width: 100%;
-    display: flex;
-    align-items:flex-start ;
-    background-color: #101010;
-    /* to make space between top and bottom of container */
-    padding: 100px 100px;
-
-}
-
-.timeline{
-    width: 80%;
-    height:auto;
-    max-width: 800px;
-    margin: 0 auto;
-    position: relative;
-}
-.timeline ul{
-    list-style: none;
-    
-
-}
-.timeline ul li{
-    padding: 1px;
-    /* background-color: #360909; */
-    color: white;
-    border-radius: 10px;
-    margin-bottom: 20px;
-}
-/* removing margin-bottom attribute to the last element */
-.timeline ul li:last-child{
-    margin-bottom: 0;
-}
-.timeline-content{
-    border-radius: 5%;
-    background-color: rgb(110, 40, 99);
-}
-.timeline-content h1{
-    /* background-color: beige; */
-    font-size: 22px;
-    font-weight: 500;
-    line-height: 30px;
-    margin-bottom: 10px;
-
-}
-.timeline-content p{
-    font-size: 14px;
-    line-height: 30px;
-
-}
-.timeline-content .date{
-    font-size: 15px;
-    font-weight: 350;
-    /* margin-bottom: 10px; */
-    letter-spacing: 2px;
-}
-
-
-    .timeline ul li{
-        width:50%;
-        margin-bottom: 50px;
-        position: relative;
-    }
-    /* we are bringing odd elements to the left and even to right */
-    .timeline ul li:nth-child(odd){
-        /* we are saying to float the elemts to left and move elements down if that element is at right */
-        float: left;
-        clear:right;
-        /* to make gap between the line and item */
-        transform: translateX(-30px);
-        /* if we need curvy edge then change this.., simialr stuff at the next css-selector */
-        /* border-radius:10%; NOT WORKING... */
-
-
-    }
-    .timeline ul li:nth-child(even){
-        /* we are saying to float the elemts to right and move elements down if that element is at left */
-        float: right;
-        clear:left;
-        /* to make gap between the line and item */
-        transform: translateX(+30px);
-        /* border-radius: 10px 10px 10px 10px; NOT WORKING */
-    }
-    /* now we need a line */
-    /*  ::before creates a pseudo-element that is the first child of the selected element. It is often used to add cosmetic content to an element with the content property.
- */ 
-    .timeline::before{
-        content: "";
-        position: absolute;
-        height: 79%;
-        width:10px;
-        border-radius: 100%;
-        background-color: rgb(91, 83, 172);
-/* to position the line to the center */
-        left:50%;
-        /* to make it perfectly center */
-        transform:translateX(-50%);
-        /* to make gap between the line and item */
-
-    }
-    /* bringing the circles in line */
-    .timeline ul li::after{
-        content: "";
-        position: absolute;
-        height: 20px;
-        width: 20px;
-        background-color: rgb(158, 37, 37);
-        /* to convert square to circle */
-        border-radius: 50%;
-        /* bringing it to top of the resp items... not center yet */
-        top: 0;
-
-    }
-    /* bringing the circles to the center now */
-    /* selecting the left <li> */
-    .timeline ul li:nth-child(odd)::after{
-        right:0;
-        transform: translate(50%,-50%);
-        right: -30px;
-    }
-    .timeline ul li:nth-child(even)::after{
-        right:0;
-        transform: translate(-50%,-50%);
-        left: -30px;
-    }
-    /* to add some effect on hovering */
-    .timeline ul li:hover::after{
-        background-color: rgb(39, 67, 67);
-
-    }
-    .timeline-content:hover{
-        background-color: aqua;
-    }
-    .timeline-content .date{
-        position: absolute;
-        top: -30px;
-    }
-   
-
-
-
-
-
-	
+/* Footer style ends */
