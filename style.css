@@ -95,3 +95,166 @@ footer {
 }
 
 /* End of aditya CSS */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;1,500&family=Roboto:wght@100&display=swap');
+/* removing default html styling */
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+.test{
+    font-size: 1cm;
+}
+html{
+    font-family: "Montserrat", sans-serif;
+    color:white;
+
+}
+/* applying bg and stuff for the container alone.. */
+.container{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items:flex-start ;
+    background-color: #101010;
+    /* to make space between top and bottom of container */
+    padding: 100px 100px;
+
+}
+
+.timeline{
+    width: 80%;
+    height:auto;
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+}
+.timeline ul{
+    list-style: none;
+    
+
+}
+.timeline ul li{
+    padding: 1px;
+    /* background-color: #360909; */
+    color: white;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+/* removing margin-bottom attribute to the last element */
+.timeline ul li:last-child{
+    margin-bottom: 0;
+}
+.timeline-content{
+    border-radius: 5%;
+    background-color: rgb(110, 40, 99);
+}
+.timeline-content h1{
+    /* background-color: beige; */
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 30px;
+    margin-bottom: 10px;
+
+}
+.timeline-content p{
+    font-size: 14px;
+    line-height: 30px;
+
+}
+.timeline-content .date{
+    font-size: 15px;
+    font-weight: 350;
+    /* margin-bottom: 10px; */
+    letter-spacing: 2px;
+}
+
+
+    .timeline ul li{
+        width:50%;
+        margin-bottom: 50px;
+        position: relative;
+    }
+    /* we are bringing odd elements to the left and even to right */
+    .timeline ul li:nth-child(odd){
+        /* we are saying to float the elemts to left and move elements down if that element is at right */
+        float: left;
+        clear:right;
+        /* to make gap between the line and item */
+        transform: translateX(-30px);
+        /* if we need curvy edge then change this.., simialr stuff at the next css-selector */
+        /* border-radius:10%; NOT WORKING... */
+
+
+    }
+    .timeline ul li:nth-child(even){
+        /* we are saying to float the elemts to right and move elements down if that element is at left */
+        float: right;
+        clear:left;
+        /* to make gap between the line and item */
+        transform: translateX(+30px);
+        /* border-radius: 10px 10px 10px 10px; NOT WORKING */
+    }
+    /* now we need a line */
+    /*  ::before creates a pseudo-element that is the first child of the selected element. It is often used to add cosmetic content to an element with the content property.
+ */ 
+    .timeline::before{
+        content: "";
+        position: absolute;
+        height: 79%;
+        width:10px;
+        border-radius: 100%;
+        background-color: rgb(91, 83, 172);
+/* to position the line to the center */
+        left:50%;
+        /* to make it perfectly center */
+        transform:translateX(-50%);
+        /* to make gap between the line and item */
+
+    }
+    /* bringing the circles in line */
+    .timeline ul li::after{
+        content: "";
+        position: absolute;
+        height: 20px;
+        width: 20px;
+        background-color: rgb(158, 37, 37);
+        /* to convert square to circle */
+        border-radius: 50%;
+        /* bringing it to top of the resp items... not center yet */
+        top: 0;
+
+    }
+    /* bringing the circles to the center now */
+    /* selecting the left <li> */
+    .timeline ul li:nth-child(odd)::after{
+        right:0;
+        transform: translate(50%,-50%);
+        right: -30px;
+    }
+    .timeline ul li:nth-child(even)::after{
+        right:0;
+        transform: translate(-50%,-50%);
+        left: -30px;
+    }
+    /* to add some effect on hovering */
+    .timeline ul li:hover::after{
+        background-color: rgb(39, 67, 67);
+
+    }
+    .timeline-content:hover{
+        background-color: aqua;
+    }
+    .timeline-content .date{
+        position: absolute;
+        top: -30px;
+    }
+   
+
+
+
+
+
+	
