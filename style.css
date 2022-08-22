@@ -252,7 +252,8 @@ a {
   position: absolute;
   height: 79%;
   width: 10px;
-  border-radius: 100%;
+  /* to change border radii */
+  /* border-radius: 100%; */
   background-color: rgb(91, 83, 172);
   left: 50%;
   transform: translateX(-50%);
