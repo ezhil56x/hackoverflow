@@ -135,35 +135,48 @@ a {
 
 /* Sponsors Styles */
 
-.card-body {
-  height: 0px;
-  background-color: aqua;
-  transition: 1s;
+.card-body{
+
+	height: 0px;
+	background-color: aqua;
+    transition: 1s;
+	
+}
+.my-3:hover .card-body{
+	transition: 1s;
+	transform: translateY(-100px);
+	height: 150%;
+	
+
 }
 
-.card-body:hover {
-  transition: 1s;
-  transform: translateY(-100px);
-  height: fit-content;
-}
 
-.card-text {
-  opacity: 0;
+.card-text{
+	opacity: 0;
 }
+.my-3:hover .card-text{
+	opacity: 1;
+	transition: 1s;
 
-.card-text:hover {
-  opacity: 1;
-  transition: 1s;
 }
+.card-img-top{
+	opacity: 1;
+}
+.my-3:hover .card-img-top{
+	opacity: 0.0;
+	transform: scale(1.2);
+	background-color: black;
+}
+.my-3{
+	height: 100px; 
+	margin-bottom: 11rem !important; 
+}
+	
+@media screen and (max-width: 767px){
+	.my-3{
+		margin-bottom: 20rem !important; 
+	}
 
-@keyframes textanima {
-  from {
-    opacity: 0;
-  }
-  to {
-    transform: translateY(-100px);
-    opacity: 0.5;
-  }
 }
 
 /* Sponsor style ends */
