@@ -1,3 +1,4 @@
+
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;1,500&family=Roboto:wght@100&display=swap");
 
 * {
@@ -7,7 +8,7 @@
 }
 
 body {
-  background: linear-gradient(132deg, rgb(253, 112, 136) 0.00%, rgb(255, 211, 165) 100.00%);
+  background: black;
 }
 /* Navbar style starts */
 
@@ -98,17 +99,23 @@ a {
 .event-name {
   padding-top: 0.4rem;
   margin-bottom: auto;
+  color:white;
 }
 
 .chapter-name {
   padding-top: 0.25rem;
   margin-bottom: auto;
+  color: white;
 }
 
 .eventStarts {
   font-size: 1.5rem;
   margin-bottom: auto;
   padding-bottom: 0.8rem;
+  color: white;
+}
+.countdown{
+  color: white;
 }
 
 /* Countdown timer style ends */
@@ -118,6 +125,7 @@ a {
 .about h1{
   text-align: center;
   padding: 0.5rem;
+  color: white;
 }
 
 .info {
@@ -125,6 +133,7 @@ a {
   justify-content: center;
   text-align: center;
   margin: 0 auto;
+  color: white;
 }
 
 .info p {
@@ -135,35 +144,48 @@ a {
 
 /* Sponsors Styles */
 
-.card-body {
-  height: 0px;
-  background-color: aqua;
-  transition: 1s;
+.card-body{
+
+	height: 0px;
+	background-color: aqua;
+    transition: 1s;
+	
+}
+.my-3:hover .card-body{
+	transition: 1s;
+	transform: translateY(-100px);
+	height: 150%;
+	
+
 }
 
-.card-body:hover {
-  transition: 1s;
-  transform: translateY(-100px);
-  height: fit-content;
-}
 
-.card-text {
-  opacity: 0;
+.card-text{
+	opacity: 0;
 }
+.my-3:hover .card-text{
+	opacity: 1;
+	transition: 1s;
 
-.card-text:hover {
-  opacity: 1;
-  transition: 1s;
 }
+.card-img-top{
+	opacity: 1;
+}
+.my-3:hover .card-img-top{
+	opacity: 0.0;
+	transform: scale(1.2);
+	background-color: black;
+}
+.my-3{
+	height: 100px; 
+	margin-bottom: 11rem !important; 
+}
+	
+@media screen and (max-width: 767px){
+	.my-3{
+		margin-bottom: 20rem !important; 
+	}
 
-@keyframes textanima {
-  from {
-    opacity: 0;
-  }
-  to {
-    transform: translateY(-100px);
-    opacity: 0.5;
-  }
 }
 
 /* Sponsor style ends */
@@ -195,7 +217,7 @@ a {
 }
 
 .timeline ul li {
-  padding: 1px;
+  
   color: white;
   border-radius: 10px;
   margin-bottom: 20px;
@@ -206,9 +228,17 @@ a {
 }
 
 .timeline-content {
-  padding: 2%;
-  border-radius: 5%;
-  background-color: rgb(110, 40, 99);
+  
+  border-radius: 4%;
+  color: rgb(135, 164, 56);
+  border: rgb(139, 179, 52) solid;
+  
+
+  text-shadow: 
+  0 0 0.125em rgb(125, 152, 15),
+  0 0 0.5em currentColor;
+  box-shadow: 0 0 3em 0 rgb(143, 179, 52);
+
 }
 
 .timeline-content h1 {
@@ -216,6 +246,7 @@ a {
   font-weight: 500;
   line-height: 30px;
   margin-bottom: 10px;
+  
 }
 
 .timeline-content p {
@@ -227,6 +258,7 @@ a {
   font-size: 15px;
   font-weight: 350;
   letter-spacing: 2px;
+  color: #abaf27;
 }
 
 .timeline ul li {
@@ -254,7 +286,7 @@ a {
   width: 10px;
   /* to change border radii */
   /* border-radius: 100%; */
-  background-color: rgb(91, 83, 172);
+  background-color: rgb(120, 142, 42);
   left: 50%;
   transform: translateX(-50%);
 }
@@ -264,7 +296,7 @@ a {
   position: absolute;
   height: 20px;
   width: 20px;
-  background-color: rgb(158, 37, 37);
+  background-color: rgb(184, 235, 107);
   border-radius: 50%;
   top: 0;
 }
@@ -282,22 +314,25 @@ a {
 }
 
 .timeline ul li:hover::after {
-  background-color: rgb(39, 67, 67);
+  background-color: rgb(185, 214, 106);
+  
 }
 
 .timeline-content:hover {
-  background-color: aqua;
+  background-color: rgb(145, 203, 38);
+  color:white;
+  text-shadow: none;
+  opacity: 1;
+  
 }
+
 
 .timeline-content .date {
   position: absolute;
   top: -30px;
 }
-
-/* Timeline style ends */
-
-/* Footer style starts */
-
+/* timeline ends :( */
+/* footer starts */
 footer {
   background-color: black;
   color: #fff;
