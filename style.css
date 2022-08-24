@@ -1,3 +1,4 @@
+
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;1,500&family=Roboto:wght@100&display=swap");
 
 * {
@@ -216,7 +217,7 @@ a {
 }
 
 .timeline ul li {
-  padding: 1px;
+  
   color: white;
   border-radius: 10px;
   margin-bottom: 20px;
@@ -227,9 +228,17 @@ a {
 }
 
 .timeline-content {
-  padding: 2%;
-  border-radius: 5%;
-  background-color: rgb(110, 40, 99);
+  
+  border-radius: 4%;
+  color: rgb(135, 164, 56);
+  border: rgb(139, 179, 52) solid;
+  
+
+  text-shadow: 
+  0 0 0.125em rgb(125, 152, 15),
+  0 0 0.5em currentColor;
+  box-shadow: 0 0 3em 0 rgb(143, 179, 52);
+
 }
 
 .timeline-content h1 {
@@ -237,6 +246,7 @@ a {
   font-weight: 500;
   line-height: 30px;
   margin-bottom: 10px;
+  
 }
 
 .timeline-content p {
@@ -248,6 +258,7 @@ a {
   font-size: 15px;
   font-weight: 350;
   letter-spacing: 2px;
+  color: #abaf27;
 }
 
 .timeline ul li {
@@ -275,7 +286,7 @@ a {
   width: 10px;
   /* to change border radii */
   /* border-radius: 100%; */
-  background-color: rgb(91, 83, 172);
+  background-color: rgb(120, 142, 42);
   left: 50%;
   transform: translateX(-50%);
 }
@@ -285,7 +296,7 @@ a {
   position: absolute;
   height: 20px;
   width: 20px;
-  background-color: rgb(158, 37, 37);
+  background-color: rgb(184, 235, 107);
   border-radius: 50%;
   top: 0;
 }
@@ -303,22 +314,25 @@ a {
 }
 
 .timeline ul li:hover::after {
-  background-color: rgb(39, 67, 67);
+  background-color: rgb(185, 214, 106);
+  
 }
 
 .timeline-content:hover {
-  background-color: aqua;
+  background-color: rgb(145, 203, 38);
+  color:white;
+  text-shadow: none;
+  opacity: 1;
+  
 }
+
 
 .timeline-content .date {
   position: absolute;
   top: -30px;
 }
-
-/* Timeline style ends */
-
-/* Footer style starts */
-
+/* timeline ends :( */
+/* footer starts */
 footer {
   background-color: black;
   color: #fff;
