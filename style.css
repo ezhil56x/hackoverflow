@@ -7,7 +7,7 @@
 }
 
 body {
-  background: linear-gradient(132deg, rgb(253, 112, 136) 0.00%, rgb(255, 211, 165) 100.00%);
+  background: black;
 }
 /* Navbar style starts */
 
@@ -98,17 +98,23 @@ a {
 .event-name {
   padding-top: 0.4rem;
   margin-bottom: auto;
+  color:white;
 }
 
 .chapter-name {
   padding-top: 0.25rem;
   margin-bottom: auto;
+  color: white;
 }
 
 .eventStarts {
   font-size: 1.5rem;
   margin-bottom: auto;
   padding-bottom: 0.8rem;
+  color: white;
+}
+.countdown{
+  color: white;
 }
 
 /* Countdown timer style ends */
@@ -118,6 +124,7 @@ a {
 .about h1{
   text-align: center;
   padding: 0.5rem;
+  color: white;
 }
 
 .info {
@@ -125,6 +132,7 @@ a {
   justify-content: center;
   text-align: center;
   margin: 0 auto;
+  color: white;
 }
 
 .info p {
